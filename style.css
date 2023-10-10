@@ -1,0 +1,137 @@
+/* google fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+*{
+    font-family: "Inter";
+    margin:0;
+    padding:0;
+    box-sizing:boder-box;
+}
+a{
+    text-decoration: none;
+    color:rgb(150, 56, 56);
+}
+header{
+    width:100%;
+    background:darkmagenta;
+    padding: 20px 30px;
+    display:flex;
+    gap:10px;
+    justify-content: space-between;
+    position:sticky;
+    top:0%;
+    left:0% ;
+}
+header a{
+    color:white;
+}
+header .brand_box a{
+    font-weight: 700;
+}
+header .nav_links a{
+    text-transform: capitalize;
+    margin:0 5px;
+    padding:5px;
+    transition: all 0.6s ease;
+    position:relative;
+    font-size: 14px;
+}
+header .nav_links a:hover{
+    color: orangered;
+}
+header .nav_links a::after{
+position: absolute;
+content:"";
+width: 0%;
+bottom: 0;
+left:0;
+height:1px;
+background: red;
+transition:all 0.5s ease;
+}
+header .nav_links a:hover:after{
+    width:100%;
+}
+#home{
+    width:100%;
+    min-height:50vh;
+    background:purple;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+}
+#home p:nth-child(1){
+    font-size: 40px;
+}
+#home div{
+    margin-top: 20px;
+}
+#home div button{
+    background: white;
+    outline:none;
+    border:none;
+    padding:6px 20px;
+    border-radius:5px ;
+    cursor:pointer;
+    transition: all 0.5s ease;
+}
+#home div button:hover{
+    background: yellow;
+}
+#blogs{
+    min-height: 100vh;
+    padding:20px;
+}
+#blogs > p{
+    text-align: center;
+    padding-bottom: 10px !important;
+    padding: 20px 50px;
+    font-size: 20px;
+}
+.hr{
+    width: 70px;
+    height: 5px;
+    background: violet;
+    margin:0 auto;
+}
+#blogs.post-container{
+    width: 100%;
+}
+#blogs.post-container.blog-card{
+    width: 200px;
+    height: 250px;
+    overflow-x:hidden;
+    border:1px solid black;
+    padding:10px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 20px 0px red;
+    cursor:pointer;
+}
+#blogs.post-container.blog-card img{
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+}
+#blogs.post-container.blog-card div{
+    font-size: 1cqh;
+
+}
+#blogs.post-container.blog-card p:nth-child(1){
+    font-size: 18px;
+}
+#blogs.post-container.blog-card p{
+    font-size: 12px;
+    text-align: start;
+}
+#blogs.post-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
