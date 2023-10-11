@@ -1,2 +1,2 @@
 # First_website- Cameroon
-This is my first website that I  made by learning from the Octohub 2023 organised by Career Development Hub of Iter,SOA
+This is my first website that I  made by learning from the Octohub 2023 organised by Career Development Hub.
